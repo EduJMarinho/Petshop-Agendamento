@@ -1,0 +1,159 @@
+aside {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 32%;
+height: 95%;
+background-color: var(--background-tertiary);
+border-radius: .5rem;
+padding: 1rem 2rem .5rem;
+/* display: none; */
+}
+
+.header-aside {
+ margin-bottom: 1.5rem;
+}
+.header-aside h1{
+ margin-bottom: .3rem;
+}
+
+.name-tutor{
+  display: flex;
+  gap: .5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #514e55;
+  margin-bottom: 1rem;
+  margin-top: .2rem;
+  padding: .5rem;
+}
+.name-pet{
+  display: flex;
+  gap: .5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #514e55;
+  margin-bottom: 1rem;
+  margin-top: .2rem;
+  padding: .5rem;
+}
+
+.fone{
+  display: flex;
+  gap: .5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #514e55;
+  margin-bottom: 1rem;
+  margin-top: .2rem;
+  padding: .5rem;
+}
+
+.div-service{
+gap: .5rem;
+border-radius: 0.3rem;
+border: 1px solid #514e55;
+margin-bottom: .2rem;
+margin-top: .2rem;
+padding: .5rem;
+}
+
+#tutor{
+  background-color: transparent;
+  border: none;    
+}
+
+#pet{
+  background-color: transparent;
+  border: none;    
+}
+
+#fone{
+  background-color: transparent;
+  border: none;    
+}
+
+#service {
+  width: 100%;
+  background-color: transparent;
+  border: none;    
+  font: var(--paragraph-small);
+  color: var(--content-secondary);
+}
+
+.date-hour{
+display: grid;
+gap: .2rem;
+width: 100%;
+margin-top: 1rem;
+grid-template-areas:
+ "a  b"
+ "c  d";    
+}
+
+.a{ grid-area: a;}
+.b{ grid-area: b;}
+.c{ grid-area: c;}
+.d{ grid-area: d;}
+
+.date-agend { 
+  width: 9rem;
+  border: 1px solid #514e55;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  text-align: center;
+}
+
+.date-agend input { 
+  font-family: var(--ff-base);
+  font-size: .7rem;
+  color: var(--content-primary);
+  background-color: transparent;
+  outline: none;
+  border: none;  
+  text-align: center; 
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background: url("../assets/Icon.svg") no-repeat;    
+}
+
+.hour-agend {
+  border: 1px solid #514e55;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.hour-agend input { 
+  font-family: var(--ff-base);
+  font-size: .7rem;
+  color: var(--content-primary);
+  background-color: transparent;
+  outline: none;
+  border: none;  
+  text-align: center; 
+}
+
+::-webkit-time-picker-indicator {
+  cursor: pointer;
+  background: url("../assets/Icon.svg") no-repeat;    
+}
+
+.btn-agend {
+  position: absolute;
+  background-color: var(--content-brand);
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  color: #050505;
+  font: var(--label-large); 
+  margin-bottom: .5rem;
+  right: 0;
+  bottom: 0;
+  margin-right: 2rem;
+  cursor: pointer;
+}

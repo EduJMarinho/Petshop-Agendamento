@@ -6,12 +6,6 @@
     align-items: center;
   }
   
-  .container{   
-  width: 90%;
-  height: 100%;
-  padding: 1px 1px;
-}
-
 h1{
   font-size: 1rem;
 }
@@ -20,7 +14,7 @@ h1{
   position: static;  
   width: 58%;
   padding: 0.5rem .5rem;
-  font: var(--label-medium);  
+  font: var(--label-small);  
   margin: auto;
 }
 
@@ -43,8 +37,7 @@ header p{
 
 .calendar {
   margin-top: .8rem;
-  padding: .2rem .5rem;
-  width:50%;
+  padding: .2rem .5rem;  
   padding: 0.5rem 0.5rem;
 }
 
@@ -59,7 +52,7 @@ header p{
 }
 
 .input {
-  width: 50%;
+  width: 40%;
   height: 2rem;
   padding: 0 ;
   margin-top: .5rem;
@@ -124,5 +117,20 @@ text-align: left;
 width: 80%;
 height: 90%;
 margin-top: 1rem;
+}
+
+.date-agend { 
+  width: 7rem; 
+}
+
+.btn-agend {  
+ margin-top: 2rem;  
+ margin-right: 30%;
+ margin-left: 30%;
+ position: static;  
+ width: 40%;
+ padding: 0.5rem .5rem;
+ font: var(--label-small);  
+ font-weight: 900;  
 }
 }

@@ -8,7 +8,7 @@ height: 95%;
 background-color: var(--background-tertiary);
 border-radius: .5rem;
 padding: 1rem 2rem .5rem;
-display: none;
+/* display: none; */
 }
 
 .header-aside {
@@ -26,6 +26,7 @@ display: none;
   margin-bottom: 1rem;
   margin-top: .2rem;
   padding: .5rem;
+  color: var(--content-tertiary) ;
 }
 .name-pet{
   display: flex;
@@ -35,6 +36,7 @@ display: none;
   margin-bottom: 1rem;
   margin-top: .2rem;
   padding: .5rem;
+  color: var(--content-tertiary) ;
 }
 
 .fone{
@@ -45,6 +47,7 @@ display: none;
   margin-bottom: 1rem;
   margin-top: .2rem;
   padding: .5rem;
+  color: var(--content-tertiary) ;
 }
 
 .div-service{
@@ -54,6 +57,7 @@ border: 1px solid #514e55;
 margin-bottom: .2rem;
 margin-top: .2rem;
 padding: .5rem;
+color: var(--content-tertiary) ;
 }
 
 #tutor{
@@ -147,7 +151,7 @@ grid-template-areas:
 .btn-agend {
   position: absolute;
   background-color: var(--content-brand);
-  padding: 0.5rem 1rem;
+  padding: .8rem 1.8rem;
   border-radius: .5rem;
   color: #050505;
   font: var(--label-large); 

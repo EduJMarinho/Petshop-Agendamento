@@ -19,144 +19,143 @@
 </head>
 
 <body>
-<main>
-  <div class="logo">
-    <img src="./assets/logo.svg" alt="Logo" />
-  </div>
+  <main>
+    <div class="logo">
+      <img src="./assets/logo.svg" alt="Logo" />
+    </div>
 
     <section class="container">
-
-    <header>
-      <div class="text">
-        <h1>Sua Agenda</h1>
-        <p>
-          Aqui você pode ver todos os clientes e serviços agendados para hoje.
-        </p>
-      </div>
-
-      <div class="calendar">
-        <i><img src="./assets/Calendar-Minimalistic--Streamline-Solar.svg" alt="Calendário" /></i>
-        <input type="date" id="date" name="date" required />
-      </div>
-
-    </header>
-
-    <ul id="hours" class="hours">
-
-      <section class="form-periods">
-
-        <div class="sec-periods">
-          <div>
-            <img src="./assets/Sun-Fog--Streamline-Solar.svg" alt="Sol da manhã">
-            <h2>Manhã</h2>
-          </div>
-          <label>09h-12h</label>
-        </div>
-
-        <ul class="periods-ul">
-          <li data-period="morning" value="09:00" class="hour hour-available">09:00</li>
-          <li class="name-animal">Mel</li>
-          <li class="tutor"> / João Souza</li>
-          <li class="service">Corte de unhas</li>
-          <li class="cancel-item">Remover Agendamento</li>
-        </ul>
-      </section>
-
-      <section class="form-periods">
-
-        <div class="sec-periods">
-          <div>
-            <img src="./assets/Cloud-Sun-4--Streamline-Solar.svg" alt="Fim de tarde">
-            <h2>Tarde</h2>
-          </div>
-          <label>13h-18h</label>
-        </div>
-
-        <ul class="periods-ul">
-          <li data-period="morning" value="16:00" class="hour hour-available">16:00</li>
-          <li class="name-animal">Bella</li>
-          <li class="tutor"> / Ana Ferreira</li>
-          <li class="service">Aplicação de anti-pulgas</li>
-          <li class="cancel-item">Remover Agendamento</li>
-        </ul>
-      </section>
-      
-
-      <section class="form-periods">
-
-        <div class="sec-periods">
-          <div>
-            <img src="./assets/Moon-Stars--Streamline-Solar.svg" alt="Lua">
-            <h2>Noite</h2>
-          </div>
-          <label>19h-21h</label>
-        </div>
-
-        <ul class="periods-ul">
-          <li data-period="morning" value="20:00" class="hour hour-available">20:00</li>
-          <li class="name-animal">Apolo</li>
-          <li class="tutor"> / Eduardo Marinho</li>
-          <li class="service">Vacinação</li>
-          <li class="cancel-item">Remover Agendamento</li>
-        </ul>
-      </section>
-      
-      </section>
-
-      </main>
-
-      <aside class="schedule">
-        <div class="header-aside">
-
-          <h1>Agende um atendimento</h1>
+      <header>
+        <div class="text">
+          <h1>Sua Agenda</h1>
           <p>
-            Preencha os dados do cliente para realizar o agendamento:
+            Aqui você pode ver todos os clientes e serviços agendados para hoje.
+          </p>
         </div>
 
-        <h2>Nome do Tutor</h2>
-        <div class="name-tutor">
-          <img src="./assets/User--Streamline-Solar.svg" alt="Calendário" />
-          <input type="text" id="tutor" name="Tutor" placeholder="Ana Ferreira">
+        <div class="calendar">
+          <i><img src="./assets/Calendar-Minimalistic--Streamline-Solar.svg" alt="Calendário" /></i>
+          <input type="date" id="date" name="date" required />
         </div>
 
-        <h2>Nome do Pet</h2>
-        <div class="name-pet">
-          <img src="./assets/Pet-Paw--Streamline-Core.svg" alt="Calendário" />
-          <input type="text" id="pet" name="Pet" placeholder="Mia">
-        </div>
+      </header>
 
-        <h2>Telefone</h2>
-        <div class="fone">
-          <img src="./assets/Phone--Streamline-Solar.svg" alt="Calendário" />
-          <input type="number" id="fone" name="Telefone" placeholder="(00) 9 9999 6655">
-        </div>
+      <ul id="hours" class="hours">
 
-        <h2>Descrição do serviço</h2>
-        <div class="div-service">
-          <textarea name="Serviços" id="service" placeholder="    Banho e tosa"></textarea>
-        </div>
+        <section class="form-periods">
 
-        <section class="date-hour">
-
-          <h2 class="a">Data</h2>
-          <div class="date-agend c">
-            <img src="./assets/Calendar-Minimalistic--Streamline-Solar.svg" alt="Calendário" />
-            <input type="date" id="input" name="date" required />
+          <div class="sec-periods">
+            <div>
+              <img src="./assets/Sun-Fog--Streamline-Solar.svg" alt="Sol da manhã">
+              <h2>Manhã</h2>
+            </div>
+            <label>09h-12h</label>
           </div>
 
-          <h2 class="b">Hora</h2>
-          <div class="hour-agend d">
-            <i><img src="./assets/Clock-Circle--Streamline-Solar.svg" alt="Calendário" /></i>
-            <input type="time" id="hour-input" name="hour" required />
-          </div>
-
+          <ul class="periods-ul">
+            <li data-period="morning" value="09:00" class="hour hour-available">09:00</li>
+            <li class="name-animal">Mel</li>
+            <li class="tutor"> / João Souza</li>
+            <li class="service">Corte de unhas</li>
+            <li class="cancel-item">Remover Agendamento</li>
+          </ul>
         </section>
 
-        <button type="submit" class="btn-agend">AGENDAR</button>
+        <section class="form-periods">
 
-      </aside>
+          <div class="sec-periods">
+            <div>
+              <img src="./assets/Cloud-Sun-4--Streamline-Solar.svg" alt="Fim de tarde">
+              <h2>Tarde</h2>
+            </div>
+            <label>13h-18h</label>
+          </div>
 
-      <button type="submit" class="button btn-media">NOVO AGENDAMENTO</button>
+          <ul class="periods-ul">
+            <li data-period="morning" value="16:00" class="hour hour-available">16:00</li>
+            <li class="name-animal">Bella</li>
+            <li class="tutor"> / Ana Ferreira</li>
+            <li class="service">Aplicação de anti-pulgas</li>
+            <li class="cancel-item">Remover Agendamento</li>
+          </ul>
+        </section>
+
+
+        <section class="form-periods">
+
+          <div class="sec-periods">
+            <div>
+              <img src="./assets/Moon-Stars--Streamline-Solar.svg" alt="Lua">
+              <h2>Noite</h2>
+            </div>
+            <label>19h-21h</label>
+          </div>
+
+          <ul class="periods-ul">
+            <li data-period="morning" value="20:00" class="hour hour-available">20:00</li>
+            <li class="name-animal">Apolo</li>
+            <li class="tutor"> / Eduardo Marinho</li>
+            <li class="service">Vacinação</li>
+            <li class="cancel-item">Remover Agendamento</li>
+          </ul>
+        </section>
+
+    </section>
+
+  </main>
+
+  <aside class="schedule">
+    <div class="header-aside">
+
+      <h1>Agende um atendimento</h1>
+      <p>
+        Preencha os dados do cliente para realizar o agendamento:
+    </div>
+
+    <h2>Nome do Tutor</h2>
+    <div class="name-tutor">
+      <img src="./assets/User--Streamline-Solar.svg" alt="Calendário" />
+      <input type="text" id="tutor" name="Tutor" placeholder="Ana Ferreira">
+    </div>
+
+    <h2>Nome do Pet</h2>
+    <div class="name-pet">
+      <img src="./assets/Pet-Paw--Streamline-Core.svg" alt="Calendário" />
+      <input type="text" id="pet" name="Pet" placeholder="Mia">
+    </div>
+
+    <h2>Telefone</h2>
+    <div class="fone">
+      <img src="./assets/Phone--Streamline-Solar.svg" alt="Calendário" />
+      <input type="number" id="fone" name="Telefone" placeholder="(00) 9 9999 6655">
+    </div>
+
+    <h2>Descrição do serviço</h2>
+    <div class="div-service">
+      <textarea name="Serviços" id="service" placeholder="    Banho e tosa"></textarea>
+    </div>
+
+    <section class="date-hour">
+
+      <h2 class="a">Data</h2>
+      <div class="date-agend c">
+        <img src="./assets/Calendar-Minimalistic--Streamline-Solar.svg" alt="Calendário" />
+        <input type="date" id="input" name="date" required />
+      </div>
+
+      <h2 class="b">Hora</h2>
+      <div class="hour-agend d">
+        <i><img src="./assets/Clock-Circle--Streamline-Solar.svg" alt="Calendário" /></i>
+        <input type="time" id="hour-input" name="hour" required />
+      </div>
+
+    </section>
+
+    <button type="submit" class="btn-agend">AGENDAR</button>
+
+  </aside>
+
+  <button type="submit" class="button btn-media">NOVO AGENDAMENTO</button>
   </section>
 
   <button type="submit" class="button btn-desktop">NOVO AGENDAMENTO</button>

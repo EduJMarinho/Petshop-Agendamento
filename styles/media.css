@@ -5,6 +5,13 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .container {   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;  
+  }
   
 h1{
   font-size: 1rem;
@@ -15,7 +22,7 @@ h1{
   width: 58%;
   padding: 0.5rem .5rem;
   font: var(--label-small);  
-  margin: auto;
+  margin: auto;  
 }
 
 .btn-desktop {
@@ -36,6 +43,7 @@ header p{
 }
 
 .calendar {
+  width: 45%;
   margin-top: .8rem;
   padding: .2rem .5rem;  
   padding: 0.5rem 0.5rem;
@@ -58,7 +66,7 @@ header p{
   margin-top: .5rem;
 }
 
-.sec-periods{  
+.sec-periods{    
   padding: .5rem;  
   border-bottom: solid .2px  #514e55;
 }
@@ -108,7 +116,9 @@ margin-top: 1rem;
 
 .btn-media {
   display: initial;
-  margin-top: 1rem;
+  margin-top: .5rem;
+  padding: .5rem .5rem;
+  font-weight: 800;
 }
 
 aside {

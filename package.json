@@ -4,8 +4,9 @@
   "main": "index.js",
   "author": "Eduardo José Marinho",
   "scripts": {
+    "build": "webpack --entry ./src/main.js --mode development",
+    "dev": "webpack serve",
     "server": "json-server --watch server.json --port 3333",
-    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
@@ -16,7 +17,12 @@
     "json-server": "^1.0.0-alpha.21"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
+    "html-webpack-plugin": "^5.6.0",
     "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }

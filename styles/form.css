@@ -1,7 +1,17 @@
+.logo {
+  position: fixed;
+}
+
+.embassy {
+  filter: blur(3px);
+  pointer-events: none;
+  transition: filter 0.01s ease;
+}
+
 .button {  /* Botão novo agendamento */ 
-  position: absolute;
+  position: fixed;
   background-color: var(--content-brand);
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: .5rem;
   color: #050505;
   font: var(--label-large);
@@ -12,21 +22,26 @@
   cursor: pointer;
 }
 
-.container{   
+.text h1 {
+  margin-bottom: .7rem;
+  margin-top: 2rem;
+}
+
+.container {   
   margin: 0 auto;
   width: 75%;
   height: 100%;
   padding: 2rem 6rem;
 }
 
-header{
-display: flex;
-justify-content: space-between;
-margin-bottom: 2rem;
+.header { 
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-header h1{
-  margin-bottom: .3rem;
+.header h1 {   
+  margin-bottom: 1rem;
 }
 
 .calendar {
@@ -36,6 +51,9 @@ header h1{
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
 }
 
 .calendar input {
@@ -51,7 +69,7 @@ header h1{
   justify-content: center;
 }
 
-.calendar img{
+.calendar img {
   margin-top: .3rem;
 }
 
@@ -60,22 +78,22 @@ header h1{
   background: url("../assets/Icon.svg") no-repeat;    
 }
 
-.sec-periods{
+.sec-periods {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;  
   padding: .75rem;  
-  border-bottom: solid .3px  #514e55;
+  
 }
 
-.sec-periods div{
+.sec-periods div {
   display: flex;
   gap: 1rem;  
 }
 
-.sec-periods label{
-  color: var(--content-secondary);
+.sec-periods label {
+  color: var(--content-primary);
 }
 
 .hours {
@@ -84,51 +102,74 @@ header h1{
   gap: .75rem;
 }
 
-.form-periods{ 
+.form-periods { 
   border-radius: .5rem;
   background-color: var(--background-tertiary);
 }
 
-.periods-ul{
+.periods-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  padding: 1rem 1rem;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Cada agendamento em linha horizontal */
+.agendamento-item {
+  display: flex;
   align-items: center;
+  justify-content:  space-between;
+  padding: 1rem .9rem .5rem;
+ border-top: solid .3px  #514e55;
+  font-family: var(  --ff-base);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.sec-periods{
-display: flex;
+/* Agrupamento dos dados em linha */
+.agendamento-item .info {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+  flex: 1;
 }
 
-.hour {
-color: var(--content-primary);
-font: var(--label-large);
+/* Estilo individual dos campos */
+.agendamento-item .hour {
+  font: var(--label-medium);
+  color: var( --content-primary);
+  width: 2rem;
 }
 
-.name-animal {
-color: var(--content-primary);
-font: var(--label-small);
-padding-left: 1rem;
+.agendamento-item .name-animal {
+  padding-left: 1rem; 
+  width: 4rem;
+  font: var(--label-small);
+  color: var( --content-primary); 
 }
 
-.tutor {
-color: var(--content-secondary);
-font: var(--paragraph-small);
+.agendamento-item .tutor {
+  width: 10rem;
+  font: var(--paragraph-small);
+  color: var( --content-secondary);
 }
 
-.service {
-color: var(--content-secondary);
-font: var(--paragraph-small);
-margin-left: auto;
-margin-right: auto;
+.agendamento-item .service {
+  font: var(--paragraph-small);
+  color: var( --content-secondary);
 }
 
-.cancel-item {
-color: var(--content-secondary);
-font: var(--paragraph-small);
-margin-left: auto;
-cursor: pointer;
+/* Remover Agendamento */
+.agendamento-item .cancel-item {
+  background-color: transparent;
+  color: var( --content-secondary);
+  border: none; 
+  cursor: pointer; 
 }
 
-.btn-media{
-  display: none;
-}
+

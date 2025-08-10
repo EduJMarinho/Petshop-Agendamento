@@ -1,4 +1,4 @@
-aside {
+.aside {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -8,6 +8,8 @@ height: 95%;
 background-color: var(--background-tertiary);
 border-radius: .5rem;
 padding: 1rem 2rem .5rem;
+z-index: 10;
+position: fixed;
 display: none;
 }
 
@@ -35,11 +37,10 @@ display: none;
   border: 1px solid #514e55;
   margin-bottom: 1rem;
   margin-top: .2rem;
-  padding: .5rem;
-  color: var(--content-tertiary) ;
+  padding: .5rem; 
 }
 
-.fone{
+.phone{
   display: flex;
   gap: .5rem;
   border-radius: 0.3rem;
@@ -47,7 +48,6 @@ display: none;
   margin-bottom: 1rem;
   margin-top: .2rem;
   padding: .5rem;
-  color: var(--content-tertiary) ;
 }
 
 .div-service{
@@ -57,7 +57,6 @@ border: 1px solid #514e55;
 margin-bottom: .2rem;
 margin-top: .2rem;
 padding: .5rem;
-color: var(--content-tertiary) ;
 }
 
 #tutor{
@@ -70,7 +69,7 @@ color: var(--content-tertiary) ;
   border: none;    
 }
 
-#fone{
+#phone{
   background-color: transparent;
   border: none;    
 }
@@ -121,16 +120,16 @@ grid-template-areas:
 
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;
-  background: url("../assets/Icon.svg") no-repeat;    
+  background: url("../assets/Icon.svg") no-repeat;   
+  font-size: 1rem; 
 }
 
 .hour-agend {
   border: 1px solid #514e55;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
-  display: flex;
-  align-items: center;  
-  justify-content: center;
+  display: flex; 
+  cursor: pointer;
 }
 
 .hour-agend input { 
@@ -140,13 +139,13 @@ grid-template-areas:
   background-color: transparent;
   outline: none;
   border: none;  
-  text-align: center; 
+  text-align: center;      
 }
-
+/* 
 ::-webkit-time-picker-indicator {
   cursor: pointer;
   background: url("../assets/Icon.svg") no-repeat;    
-}
+} */
 
 .btn-agend {
   position: absolute;

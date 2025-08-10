@@ -25,12 +25,12 @@
   --border-divisor:#353339;  
 
   /* Accent */
-  --accent-blue: #027DF0;
+  /* --accent-blue: #027DF0;
   --accent-blue-light:#16487A;
   --accent-yellow: #F0DC02;  
   --accent-yellow-light: #756E1B;  
   --accent-orange: #F09102;  
-  --accent-orange-light: #75501B;  
+  --accent-orange-light: #75501B;   */
     
     /* fontes */
   --ff-base: 'Inter', 'Helvetica Neue', Arial, sans-serif;
@@ -64,7 +64,7 @@ body {
     font: var(--Title);
   }
 
-  h2{
+     h2{
     font: var(--label-large);
   }
 
@@ -72,3 +72,12 @@ body {
     font: var(--paragraph-small);
     color: var(--content-secondary);
   }
+
+  input{
+    color: var(--content-secondary);
+    width: 100%;
+    background-color: transparent;    
+  }
+
+
+

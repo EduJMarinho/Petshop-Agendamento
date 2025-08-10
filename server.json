@@ -1,4 +1,34 @@
 {
-  "schedules": [
+  "bookings": [
+    {
+      "id": "1754805437781",
+      "tutor": "Edu",
+      "pet": "Mia",
+      "phone": "3232",
+      "service": "Sdsads",
+      "date": "2025-08-10",
+      "hour": "09:10",
+      "period": "Manhã"
+    },
+    {
+      "id": "1754805453748",
+      "tutor": "Edu",
+      "pet": "Mia",
+      "phone": "3232",
+      "service": "Sdsads",
+      "date": "2025-08-11",
+      "hour": "09:10",
+      "period": "Manhã"
+    },
+    {
+      "id": "me5y09uu4o4o9",
+      "tutor": "Edu",
+      "pet": "Atena",
+      "phone": "23231",
+      "service": "Asdasd",
+      "date": "2025-08-10",
+      "hour": "14:15",
+      "period": "afternoon"
+    }
   ]
 }

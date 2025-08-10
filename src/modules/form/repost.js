@@ -1,12 +1,14 @@
-// 🆔 Gera um ID único para cada agendamento
+// import React, { useEffect } from 'react';
+
+// Gera um ID único para cada agendamento
 function generateId() {
   return Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
 }
 
-// 🧠 Conjunto para controlar IDs já renderizados (não está sendo usado no momento)
+//  Conjunto para controlar IDs já renderizados (não está sendo usado no momento)
 const renderedIds = new Set();
 
-// 🕒 Determina o período do dia com base no horário informado
+// Determina o período do dia com base no horário informado
 function getPeriod(hour) {
   const [h, m] = hour.split(":").map(Number);
   const totalMinutes = h * 60 + m;
@@ -17,12 +19,15 @@ function getPeriod(hour) {
   return null; // Fora dos períodos definidos
 }
 
-// 🔠 Capitaliza a primeira letra de cada palavra
+//  Capitaliza apenas a primeira letra de cada palavra
 function capitalizeWords(str) {
-  return str.replace(/\b\w/g, char => char.toUpperCase());
+  return str
+    .toLowerCase()
+    .replace(/\b\w+/g, word => word.charAt(0).toUpperCase() + word.slice(1));
 }
 
-// 🖼️ Cria visualmente o agendamento na interface
+
+//  Cria visualmente o agendamento na interface
 function renderBooking(data) {
   console.log("Renderizando agendamento:", data);
 
@@ -64,14 +69,14 @@ function renderBooking(data) {
     fetch(`http://localhost:3333/bookings/${data.id}`, {
       method: "DELETE"
     })
-    .then(response => {
-      if (!response.ok) throw new Error("Erro ao excluir do servidor.");
-      console.log(`Agendamento ${data.id} removido do servidor.`);
-    })
-    .catch(error => {
-      console.error("Erro ao excluir:", error);
-      alert("Falha ao remover do servidor.");
-    });
+      .then(response => {
+        if (!response.ok) throw new Error("Erro ao excluir do servidor.");
+        console.log(`Agendamento ${data.id} removido do servidor.`);
+      })
+      .catch(error => {
+        console.error("Erro ao excluir:", error);
+        alert("Falha ao remover do servidor.");
+      });
   });
 }
 
@@ -83,7 +88,7 @@ function clearAgenda() {
   });
 }
 
-// 📅 Carrega agendamentos do servidor filtrando pela data
+//  Carrega agendamentos do servidor filtrando pela data
 function loadBookingsByDate(selectedDate) {
   fetch("http://localhost:3333/bookings")
     .then(response => {
@@ -101,7 +106,7 @@ function loadBookingsByDate(selectedDate) {
     });
 }
 
-// 📆 Inicializa a data atual no campo de input
+//  Inicializa a data atual no campo de input
 const inputDate = document.getElementById("input");
 
 if (!inputDate.value) {
@@ -115,7 +120,7 @@ inputDate.addEventListener("change", (e) => {
   loadBookingsByDate(e.target.value);
 });
 
-// 📝 Evento de criação de novo agendamento
+//  Evento de criação de novo agendamento
 document.querySelector(".btn-agend").addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -160,28 +165,32 @@ document.querySelector(".btn-agend").addEventListener("click", (e) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(bookingData)
   })
-  .then(response => {
-    if (!response.ok) throw new Error("Erro ao salvar no servidor.");
-    return response.json();
-  })
-  .then(data => {
-    console.log("Agendamento salvo:", data);
-    loadBookingsByDate(data.date);
+    .then(response => {
+      if (!response.ok) throw new Error("Erro ao salvar no servidor.");
+      return response.json();
+    })
+    .then(data => {
+      console.log("Agendamento salvo:", data);
 
-    // Limpa o formulário após envio
-    tutorInput.value = "";
-    petInput.value = "";
-    phoneInput.value = "";
-    serviceInput.value = "";
-    dateInput.value = inputDate.value;
-    hourInput.value = "";
-  })
-  .catch(error => {
-    console.error("Erro:", error);
-    alert("Falha ao agendar. Verifique o servidor.");
-  });
+
+      // Reinicia a página completamente após o envio
+      location.reload();
+
+      loadBookingsByDate(data.date);
+
+      // Limpa o formulário após envio
+      tutorInput.value = "";
+      petInput.value = "";
+      phoneInput.value = "";
+      serviceInput.value = "";
+      dateInput.value = inputDate.value;
+      hourInput.value = "";
+    })
+    .catch(error => {
+      console.error("Erro:", error);
+      alert("Falha ao agendar. Verifique o servidor.");
+    });
 });
-
 
 useEffect(() => {
   fetch("http://localhost:3000/agendamentos")

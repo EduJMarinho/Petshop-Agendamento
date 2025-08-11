@@ -1,8 +1,6 @@
-// import React, { useEffect } from 'react';
-
 // Gera um ID único para cada agendamento
 function generateId() {
-  return Date.now().toString(36) + Math.random().toString(36).substr(2, 5);
+  return Date.now().toString(36) + Math.random().toString(36).substr (2, 5);
 }
 
 //  Conjunto para controlar IDs já renderizados (não está sendo usado no momento)

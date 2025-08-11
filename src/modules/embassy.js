@@ -1,3 +1,4 @@
+// Controle do Aside e do Main no app.
 document.addEventListener("DOMContentLoaded", () => {
   const btnMedia = document.querySelector(".btn-media");
   const btnDesktop = document.querySelector(".btn-desktop");

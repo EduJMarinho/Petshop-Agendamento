@@ -12,7 +12,7 @@ import "../styles/aside.css";
 import "../styles/media.css";
 
 
-//JS
+// Importação dos arquivos  JS
 import "./modules/form/submit.js";
 import "./modules/embassy.js";
 import "./modules/page-load.js";

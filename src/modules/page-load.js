@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function (){
   schedulesDay()
 })
 
-
   // Função que capitaliza a primeira letra de cada palavra
   function firstLetter(texto) {
     return texto

@@ -141,11 +141,6 @@ grid-template-areas:
   border: none;  
   text-align: center;      
 }
-/* 
-::-webkit-time-picker-indicator {
-  cursor: pointer;
-  background: url("../assets/Icon.svg") no-repeat;    
-} */
 
 .btn-agend {
   position: absolute;

@@ -1,3 +1,4 @@
+// Atribuição de valores.
 function loadBookings() {
   fetch("http://localhost:3333/bookings")
     .then(response => {

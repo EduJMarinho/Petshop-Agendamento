@@ -2,7 +2,7 @@
 
 
 **Desenvolvido por:** Dev Eduardo José Marinho  
-**Desafio:** Projeto  de Estudo de lógica e modularização com JavaScript com utilização de pacotes, Dayjs e Webpack - Rocketseat.
+**Desafio:** Projeto  de Estudo de lógica e modularização com JavaScript com utilização de pacotes, Dayjs  e Webpack - Rocketseat.
 
 
 ## 🚀 Tecnologias Utilizadas
@@ -36,19 +36,21 @@ A modularização dos scripts e a separação por responsabilidades tornaram o c
 - **Tarde**: entre 12h e 18h  
 - **Noite**: após 18h  
 
+🧠 Analisar 📚 Aprender ❌ Errar  
+    🔁 Refatorar  🛠️ Construirr  
+    ->   ->   ->   ->   ->   ->   ->    
+→ Esse é o caminho do Dev. — Edu Marinho
 
-
+                              ---<>---
+                              
 ## 🛠️ Execução Local
 
 1. Instale o JSON Server:
    ```bash
    npm install -g json-server
 
-                              ---<>---
 
-    🧠 Analisar 📚 Aprender ❌ Errar  
-        🔁 Refatorar  🛠️ Construirr  
-        ->   ->   ->   ->   ->   ->   ->    
-    → Esse é o caminho do Dev. — Edu Marinho
+
+
 
  

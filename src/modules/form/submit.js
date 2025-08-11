@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Carrega a data atual no Main.
   if (selectedDate) {
-    selectedDate.value = inputToday;
+    selectedDate.value = inputToday;    
     // Define a data mínima com a atual no main.
     selectedDate.min = inputToday;
   }
@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
       main.classList.add("embassy");
     });
   }
-
   
   if (btnFechar && aside && main) {
     btnFechar.addEventListener("click", () => {

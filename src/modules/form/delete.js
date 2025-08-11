@@ -28,13 +28,13 @@ function renderBooking(data) {
     fetch(`http://localhost:3333/bookings/${data.id}`, {
       method: "DELETE"
     })
-    .then(response => {
-      if (!response.ok) throw new Error("Erro ao excluir do servidor.");
-      console.log(`Agendamento ${data.id} removido do servidor.`);
-    })
-    .catch(error => {
-      console.error("Erro ao excluir:", error);
-      alert("Falha ao remover do servidor.");
-    });
+      .then(response => {
+        if (!response.ok) throw new Error("Erro ao excluir do servidor.");
+        console.log(`Agendamento ${data.id} removido do servidor.`);
+      })
+      .catch(error => {
+        console.error("Erro ao excluir:", error);
+        alert("Falha ao remover do servidor.");
+      });
   });
 }

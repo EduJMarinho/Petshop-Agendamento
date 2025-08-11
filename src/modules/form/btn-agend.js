@@ -57,21 +57,21 @@ document.addEventListener("DOMContentLoaded", () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(bookingData)
     })
-    .then(response => {
-      if (!response.ok) throw new Error("Erro ao salvar no servidor.");
-      return response.json();
-    })
-    .then(data => {
-      console.log("Agendamento salvo:", data);
-      loadBookingsByDate(data.date);
-      fecharAgendamento();
-    })
-    .catch(error => {
-      console.error("Erro:", error);
-      alert("Falha ao agendar. Verifique o servidor.");
-    })
-    .finally(() => {
-      btnAgend.disabled = false;
-    });
+      .then(response => {
+        if (!response.ok) throw new Error("Erro ao salvar no servidor.");
+        return response.json();
+      })
+      .then(data => {
+        console.log("Agendamento salvo:", data);
+        loadBookingsByDate(data.date);
+        fecharAgendamento();
+      })
+      .catch(error => {
+        console.error("Erro:", error);
+        alert("Falha ao agendar. Verifique o servidor.");
+      })
+      .finally(() => {
+        btnAgend.disabled = false;
+      });
   });
 });

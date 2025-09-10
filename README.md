@@ -38,9 +38,9 @@ A modularização dos scripts e a separação por responsabilidades tornaram o c
 
 ------------------------------------
 **
-    🧠 Analisar 📚 Aprender ❌ Errar  
-       🔁 Refatorar  🛠️ Construir  
-          
+🧠 Analisar  📚 Aprender  ❌ Errar  
+  🔁 Refatorar  🛠️ Construir  
+        → → → → → → →  
 → Esse é o caminho do Dev. — Edu Marinho
 
 

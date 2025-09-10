@@ -36,10 +36,15 @@ A modularização dos scripts e a separação por responsabilidades tornaram o c
 - **Tarde**: entre 12h e 18h  
 - **Noite**: após 18h  
 
-🧠 Analisar 📚 Aprender ❌ Errar  
-    🔁 Refatorar  🛠️ Construirr  
-    ->   ->   ->   ->   ->   ->   ->    
+------------------------------------
+**
+    🧠 Analisar 📚 Aprender ❌ Errar  
+       🔁 Refatorar  🛠️ Construir  
+          
 → Esse é o caminho do Dev. — Edu Marinho
+
+
+
 
                               ---<>---
                               
